@@ -1,0 +1,16 @@
+{
+  "name": "cv-portfolio",
+  "version": "1.0.0",
+  "description": "Professional CV and Portfolio Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "keywords": ["portfolio", "cv", "resume"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.x"
+  }
+}

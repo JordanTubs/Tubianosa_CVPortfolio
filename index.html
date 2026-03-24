@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Portfolio</h1>
+            <ul class="flex gap-6">
+                <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a></li>
+                <li><a href="#education" class="text-gray-700 hover:text-blue-600 transition">Education</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 flex items-center gap-12">
+            <!-- Photo -->
+            <div class="flex-shrink-0">
+                <img src="https://via.placeholder.com/250" alt="Profile Photo" class="w-64 h-64 rounded-full border-4 border-white shadow-lg object-cover">
+            </div>
+            <!-- Info -->
+            <div>
+                <h1 class="text-5xl font-bold mb-2">Your Full Name</h1>
+                <p class="text-xl text-blue-100 mb-4">Full Stack Developer | Tech Enthusiast | Problem Solver</p>
+                <p class="text-blue-100 mb-6 max-w-xl">Welcome to my professional portfolio. I am passionate about creating innovative solutions and continuous learning in technology.</p>
+                <div class="flex gap-4">
+                    <a href="mailto:your.email@example.com" class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Me</a>
+                    <a href="#projects" class="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-6 py-16">
+        
+        <!-- Education Section -->
+        <section id="education" class="mb-20">
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-6">
+                <div class="card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Bachelor of Science in Computer Science</h3>
+                        <span class="text-blue-600 font-semibold">2020 - 2024</span>
+                    </div>
+                    <p class="text-lg text-gray-700 mb-2">University Name</p>
+                    <p class="text-gray-600">Relevant coursework: Data Structures, Web Development, Software Engineering, Database Management</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title 1</h3>
+                    <p class="text-gray-600 mb-4">Brief description of the project and its key features. Explain the technologies used and the impact it had.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">View Project →</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title 2</h3>
+                    <p class="text-gray-600 mb-4">Brief description of the project and its key features. Explain the technologies used and the impact it had.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Express</span>
+                    </div>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">View Project →</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title 3</h3>
+                    <p class="text-gray-600 mb-4">Brief description of the project and its key features. Explain the technologies used and the impact it had.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Flask</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                    </div>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">View Project →</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title 4</h3>
+                    <p class="text-gray-600 mb-4">Brief description of the project and its key features. Explain the technologies used and the impact it had.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                    </div>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">View Project →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                        Frontend
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ React.js</li>
+                        <li>✓ JavaScript/ES6+</li>
+                        <li>✓ HTML/CSS</li>
+                        <li>✓ Tailwind CSS</li>
+                        <li>✓ Vue.js</li>
+                        <li>✓ Responsive Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                        Backend
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Node.js</li>
+                        <li>✓ Python</li>
+                        <li>✓ MongoDB</li>
+                        <li>✓ PostgreSQL</li>
+                        <li>✓ Express.js</li>
+                        <li>✓ RESTful APIs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                        Tools & Other
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Git & GitHub</li>
+                        <li>✓ Docker</li>
+                        <li>✓ Figma</li>
+                        <li>✓ VS Code</li>
+                        <li>✓ Agile/Scrum</li>
+                        <li>✓ Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Affiliation Section (Optional) -->
+        <section class="mb-20">
+            <h2 class="section-title">Affiliations & Memberships</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Tech Club Member</h3>
+                    <p class="text-gray-600">Active member of the University Tech Club since 2021, participating in hackathons and tech workshops.</p>
+                    <p class="text-sm text-gray-500 mt-3">2021 - Present</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Open Source Contributor</h3>
+                    <p class="text-gray-600">Contributing to various open-source projects on GitHub, focusing on web development and developer tools.</p>
+                    <p class="text-sm text-gray-500 mt-3">2022 - Present</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section (Optional) -->
+        <section class="mb-20">
+            <h2 class="section-title">Research & Publications</h2>
+            <div class="space-y-6">
+                <div class="card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">"Research Title Here"</h3>
+                    <p class="text-gray-600 mb-2">Published in: Journal/Conference Name</p>
+                    <p class="text-gray-600">Brief description of the research topic, methodology, and key findings. Include links to the publication if available.</p>
+                    <p class="text-sm text-gray-500 mt-3">2024</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="mb-4 text-gray-400">&copy; 2024 Your Full Name. All rights reserved.</p>
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://github.com" class="hover:text-blue-400 transition">GitHub</a>
+                <a href="https://linkedin.com" class="hover:text-blue-400 transition">LinkedIn</a>
+                <a href="https://twitter.com" class="hover:text-blue-400 transition">Twitter</a>
+                <a href="mailto:your.email@example.com" class="hover:text-blue-400 transition">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
