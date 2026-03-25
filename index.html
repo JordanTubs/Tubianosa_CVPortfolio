@@ -15,7 +15,7 @@
         .cv-container {
             background-color: white;
             max-width: 900px;
-            margin: 20px auto;
+            margin: 10px auto;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             border-radius: 16px;
             overflow: hidden;
@@ -29,11 +29,11 @@
             align-items: center;
             gap: 10px;
             font-weight: 700;
-            font-size: 16px;
+            font-size: clamp(14px, 3vw, 16px);
             margin-bottom: 20px;
         }
         .section-header i {
-            font-size: 18px;
+            font-size: clamp(16px, 3vw, 18px);
         }
     </style>
 </head>
@@ -41,55 +41,56 @@
     <!-- Main CV Container -->
     <div class="cv-container">
         <!-- Header Section -->
-        <div class="bg-gray-100 px-8 py-8">
-            <div class="flex gap-8 items-start">
+        <div class="bg-gray-100 px-4 md:px-8 py-6 md:py-8">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
                 <!-- Profile Photo -->
                 <div class="flex-shrink-0">
-                    <img src="Profile.jpg" alt="Profile Photo" class="w-48 h-48 rounded-full object-cover border-4 border-gray-300 shadow-lg">
+                    <img src="Profile.jpg" alt="Profile Photo" class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-300 shadow-lg">
                 </div>
                 
                 <!-- Header Info -->
-                <div class="flex-grow pt-4">
-                    <h1 class="text-5xl font-bold text-gray-900 mb-1">JORDAN EREAHN TUBIANOSA</h1>
-                    <p class="text-lg text-blue-600 font-semibold mb-2">BSIT STUDENT</p>
-                    <div class="w-16 h-1 bg-blue-600 mb-6"></div>
+                <div class="flex-grow text-center md:text-left pt-0 md:pt-4">
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-1">JORDAN EREAHN TUBIANOSA</h1>
+                    <p class="text-base md:text-lg text-blue-600 font-semibold mb-2">BS-IT STUDENT</p>
+                    <p class="text-base md:text-lg text-blue-600 font-semibold mb-2">Undergraduate</p>
+                    <div class="w-16 h-1 bg-blue-600 mb-6 mx-auto md:mx-0"></div>
                     
                     <!-- Contact Info Box -->
-                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-3xl px-6 py-4">
-                        <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-3xl px-4 md:px-6 py-3 md:py-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                             <div class="flex items-center gap-3">
-                                <i class="fas fa-phone text-lg"></i>
+                                <i class="fas fa-phone text-base md:text-lg"></i>
                                 <div>
                                     <p class="text-xs font-semibold">Phone:</p>
-                                    <p class="text-sm">0927-677-4149</p>
+                                    <p class="text-xs md:text-sm">0927-677-4149</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
-                                <i class="fas fa-home text-lg"></i>
+                                <i class="fas fa-home text-base md:text-lg"></i>
                                 <div>
                                     <p class="text-xs font-semibold">Address:</p>
-                                    <p class="text-sm">Davao City</p>
+                                    <p class="text-xs md:text-sm">Davao City</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
-                                <i class="fas fa-envelope text-lg"></i>
+                                <i class="fas fa-envelope text-base md:text-lg"></i>
                                 <div>
                                     <p class="text-xs font-semibold">Email:</p>
-                                    <p class="text-sm">jordpordy16@gmail.com</p>
+                                    <p class="text-xs md:text-sm">jordpordy16@gmail.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
-                                <i class="fab fa-instagram text-lg"></i>
+                                <i class="fab fa-instagram text-base md:text-lg"></i>
                                 <div>
                                     <p class="text-xs font-semibold">Instagram:</p>
-                                    <a href="https://www.instagram.com/JordanTubs/" target="_blank" class="text-sm text-white font-semibold hover:text-gray-200 hover:underline cursor-pointer transition">@JordanTubs</a>
+                                    <a href="https://www.instagram.com/JordanTubs/" target="_blank" class="text-xs md:text-sm text-white font-semibold hover:text-gray-200 hover:underline cursor-pointer transition">@JordanTubs</a>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
-                                <i class="fab fa-facebook text-lg"></i>
+                                <i class="fab fa-facebook text-base md:text-lg"></i>
                                 <div>
                                     <p class="text-xs font-semibold">Facebook:</p>
-                                    <a href="https://web.facebook.com/jordantubianosa15/" target="_blank" class="text-sm text-white font-semibold hover:text-gray-200 hover:underline cursor-pointer transition">Jordan Ereahn Carbona Tubianosa</a>
+                                    <a href="https://web.facebook.com/jordantubianosa15/" target="_blank" class="text-xs md:text-sm text-white font-semibold hover:text-gray-200 hover:underline cursor-pointer transition">Jordan Ereahn Carbona Tubianosa</a>
                                 </div>
                             </div>
                         </div>
@@ -99,9 +100,9 @@
         </div>
 
         <!-- Main Content -->
-        <div class="px-8 py-8">
+        <div class="px-4 md:px-8 py-6 md:py-8">
         <!-- Main Content (2 Column Grid) -->
-        <div class="grid grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <!-- Left Column: Education & Reference -->
             <div>
                 <!-- Education Section -->
@@ -111,26 +112,32 @@
                         EDUCATION
                     </div>
                     <div class="space-y-4">
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-1">College - Bachelor of Science in Information Technology</h3>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">College - Bachelor of Science in Information Technology</h3>
                             <p class="text-xs text-gray-600 mb-1"><strong>Ateneo de Davao University</strong></p>
                             <p class="text-xs text-blue-600 font-semibold mb-2">2024 - 2028</p>
                             <p class="text-xs text-gray-600">Pursuing a degree in Information Technology with focus on software development and user interface design. Building strong foundations in programming and practical problem-solving skills.</p>
                         </div>
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-1">Senior High School - Pre Med</h3>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">College - Civil Engineering</h3>
+                            <p class="text-xs text-gray-600 mb-1"><strong>Mapua Malayan Colleges Davao</strong></p>
+                            <p class="text-xs text-blue-600 font-semibold mb-2">2022 - 2024</p>
+                            <p class="text-xs text-gray-600">Pursuing a degree in Civil Engineering with focus on structural design and construction management. Building strong foundations in mathematics and physics.</p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">Senior High School -STEM Pre Science</h3>
                             <p class="text-xs text-gray-600 mb-1"><strong>Ateneo de Davao University-Senior Highschool</strong></p>
                             <p class="text-xs text-blue-600 font-semibold mb-2">2020 - 2022</p>
                             <p class="text-xs text-gray-600">Pre-Medical track with strong focus on science and mathematics subjects.</p>
                         </div>
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-1">High School</h3>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">High School</h3>
                             <p class="text-xs text-gray-600 mb-1"><strong>Ateneo de Davao University-Junior Highschool</strong></p>
                             <p class="text-xs text-blue-600 font-semibold mb-2">2018 - 2020</p>
                             <p class="text-xs text-gray-600">Completed high school education with focus on academics and extracurricular activities.</p>
                         </div>
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-1">Elementary School</h3>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">Elementary School</h3>
                             <p class="text-xs text-gray-600 mb-1"><strong>Colegio de San Juan de Letran</strong></p>
                             <p class="text-xs text-blue-600 font-semibold mb-2">2012 - 2018</p>
                             <p class="text-xs text-gray-600">Completed elementary education with strong academic foundation.</p>
@@ -145,19 +152,17 @@
                         PROJECTS
                     </div>
                     <div class="space-y-6">
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-2">Project Name 1</h3>
-                            <p class="text-xs text-gray-600 mb-1"><strong>Description:</strong> Brief project description</p>
-                            <p class="text-xs text-gray-600 mb-1"><strong>Technologies:</strong> Tech stack used</p>
-                            <p class="text-xs text-gray-600 mb-1"><strong>Link:</strong> Project URL or GitHub link</p>
-                            <p class="text-xs text-gray-600"><strong>Status:</strong> Completed/In Progress</p>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-2 text-sm md:text-base">HitchPH</h3>
+                            <p class="text-xs text-gray-600 mb-1"><strong>Description:</strong> A ride-sharing platform for hitchhikers and drivers.</p>
+                            <p class="text-xs text-gray-600 mb-1"><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+                            <p class="text-xs text-gray-600"><strong>Status:</strong> In Progress</p>
                         </div>
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-2">Project Name 2</h3>
-                            <p class="text-xs text-gray-600 mb-1"><strong>Description:</strong> Brief project description</p>
-                            <p class="text-xs text-gray-600 mb-1"><strong>Technologies:</strong> Tech stack used</p>
-                            <p class="text-xs text-gray-600 mb-1"><strong>Link:</strong> Project URL or GitHub link</p>
-                            <p class="text-xs text-gray-600"><strong>Status:</strong> Completed/In Progress</p>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-2 text-sm md:text-base">Personal Portfolio</h3>
+                            <p class="text-xs text-gray-600 mb-1"><strong>Description:</strong> A responsive portfolio website to showcase my projects and skills.</p>
+                            <p class="text-xs text-gray-600 mb-1"><strong>Technologies:</strong> HTML, CSS, JavaScript, Tailwind CSS</p>
+                            <p class="text-xs text-gray-600"><strong>Status:</strong> Completed</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +176,7 @@
                         <i class="fas fa-user"></i>
                         PROFILE
                     </div>
-                    <div class="bg-gray-100 rounded-lg p-6 text-gray-700 text-sm leading-relaxed">
+                    <div class="bg-gray-100 rounded-lg p-4 md:p-6 text-gray-700 text-xs md:text-sm leading-relaxed">
                         <p>I am an IT student passionate about technology and coding. With a strong foundation in programming and UI design, I am committed to continuous learning and developing innovative solutions. I actively seek opportunities to apply my technical skills in real-world projects.</p>
                     </div>
                 </div>
@@ -182,32 +187,32 @@
                         <i class="fas fa-star"></i>
                         SKILLS
                     </div>
-                    <div class="bg-gray-100 rounded-lg p-6 space-y-4">
+                    <div class="bg-gray-100 rounded-lg p-4 md:p-6 space-y-4">
                         <div>
                             <div class="flex justify-between mb-2">
                                 <span class="text-xs font-semibold text-gray-700">Java</span>
-                                <span class="text-xs text-gray-600">85%</span>
+                                <span class="text-xs text-gray-600">45%</span>
                             </div>
                             <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 45%"></div>
                             </div>
                         </div>
                         <div>
                             <div class="flex justify-between mb-2">
                                 <span class="text-xs font-semibold text-gray-700">Python</span>
-                                <span class="text-xs text-gray-600">80%</span>
+                                <span class="text-xs text-gray-600">40%</span>
                             </div>
                             <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
                             </div>
                         </div>
                         <div>
                             <div class="flex justify-between mb-2">
                                 <span class="text-xs font-semibold text-gray-700">UI Design</span>
-                                <span class="text-xs text-gray-600">75%</span>
+                                <span class="text-xs text-gray-600">80%</span>
                             </div>
                             <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
@@ -220,27 +225,22 @@
                         JOB EXPERIENCE
                     </div>
                     <div class="space-y-4">
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-1">Student Ambassador</h3>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">Student Ambassador</h3>
                             <p class="text-xs text-gray-600 mb-1"><strong>Andy Player</strong></p>
                             <p class="text-xs text-blue-600 font-semibold mb-2">2023 - 2024</p>
-                            <p class="text-xs text-gray-600">Andy Player student ambassador in order to market the drinks of andy player</p>
+                            <p class="text-xs text-gray-600">Served as a Student Ambassador for Andy Player, promoting and marketing the brand’s alcoholic beverages within the campus community. Led brand awareness campaigns, organized and supported events, and engaged with target audiences while ensuring responsible marketing practices</p>
                         </div>
-                        <div class="bg-gray-100 rounded-lg p-6">
-                            <h3 class="font-bold text-gray-900 mb-1">Sales Person</h3>
+                        <div class="bg-gray-100 rounded-lg p-4 md:p-6">
+                            <h3 class="font-bold text-gray-900 mb-1 text-sm md:text-base">Sales Person</h3>
                             <p class="text-xs text-gray-600 mb-1"><strong>Front Row</strong></p>
                             <p class="text-xs text-blue-600 font-semibold mb-2">2018 - 2021</p>
-                            <p class="text-xs text-gray-600">BAttended scheduled training sessions, department meetings, and company event to build expertise and promote company image</p>
+                            <p class="text-xs text-gray-600">Attended scheduled training sessions, department meetings, and company event to build expertise and promote company image</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="text-center py-4 text-gray-600 text-sm bg-white">
-        <p>&copy; 2024 Jordan Ereahn Tubianosa. All rights reserved.</p>
     </div>
 </body>
 </html>
